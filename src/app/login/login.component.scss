@@ -1,0 +1,62 @@
+/* Imposta uno sfondo responsive per il gradient */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #2A2A40;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #4d637c, #4d4d55);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #4d637c, #4d4d55);
+}
+
+/* Imposta il background del card-body */
+.card-body {
+  background-color: #2A2A40;
+}
+
+/* Modifica la dimensione del titolo principale in base alla dimensione dello schermo */
+.title {
+  color: #0D98BA;
+  font-family: 'BERNIER Distressed', sans-serif;
+  font-size: 60px;
+}
+
+/* Modifica la dimensione del titolo di login in base alla dimensione dello schermo */
+.title_login {
+  font-size: 46px;
+}
+
+/* Imposta il colore del testo per la classe "colore" */
+.colore {
+  color: #DFDFE2;
+}
+
+/* Imposta il massimo height per la card-body su schermi piccoli */
+@media (max-width: 768px) {
+  .card-body {
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  /* Riduci la dimensione del titolo principale per dispositivi mobili */
+  .title {
+    font-size: 36px;
+  }
+
+  /* Riduci la dimensione del titolo di login per dispositivi mobili */
+  .title_login {
+    font-size: 30px;
+  }
+
+  /* Riduci la dimensione degli input e aggiusta gli spazi verticali per dispositivi mobili */
+  .form-control {
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  /* Riduci il margine tra gli elementi */
+  .mb-4 {
+    margin-bottom: 10px;
+  }
+}
